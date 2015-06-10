@@ -15,7 +15,7 @@
 <body>
 
 <div class="col-lg-2"></div>
-<div id="div_edit" class="col-lg-8 container-fluid">
+<div id="div_edit" class="col-lg-8 container-fluid"  style="margin-top:20px">
 	
 	<button id="btn0">Click Me!</button>
 
