@@ -1,0 +1,3 @@
+<%
+response.write("Hey! Welcome to AJAX!")
+%>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Click button to create as many buttons as you want </title>
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+ <script type="text/javascript" src="jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="js/bootstrap.js"></script>
+ 
+
+</head>
+
+<body>
+
+<div class="col-lg-2"></div>
+<div id="div_edit" class="col-lg-8 container-fluid">
+	
+	<button id="btn0">Click Me!</button>
+
+</div>
+<div class="col-lg-2"></div>
+
+
+
+
+
+
+<script>
+
+    $('button').on('click',function(){
+    createButton();
+    });	     
+    
+    var str;
+    function createButton() {
+        str = $('<button id="btn" onclick="createButton()">New Button</button>');
+        $("#div_edit").append(str);        
+    }
+
+</script>
+
+</body>
+</html>
